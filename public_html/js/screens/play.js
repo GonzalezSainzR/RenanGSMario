@@ -6,7 +6,7 @@ game.PlayScreen = me.ScreenObject.extend({
 		// reset the score
 		game.data.score = 0;
                 
-                me.levelDirector.loadLevel("Level05");
+                me.levelDirector.loadLevel("Level04");
                 
                 
                 var player = me.pool.pull("mario", 0, 432, {});
