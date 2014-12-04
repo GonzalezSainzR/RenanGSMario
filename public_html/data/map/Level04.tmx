@@ -11,8 +11,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="175" name="area01_level_tiles" tilewidth="32" tileheight="32">
-  <image source="../img/area01_level_tiles.png" width="640" height="241"/>
+ <tileset firstgid="175" name="area01_level_tiles" tilewidth="70" tileheight="70">
+  <image source="../img/area01_level_tiles.png" width="1365" height="508"/>
  </tileset>
  <layer name="background2" width="16" height="9">
   <data encoding="base64">
