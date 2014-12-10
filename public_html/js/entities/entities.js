@@ -27,6 +27,20 @@ game.PlayerEntity = me.Entity.extend({
         else if (me.input.isKeyPressed("left")) {
             this.body.vel.x -= this.body.accel.x * me.timer.tick;
         }
+        else if (me.input.isKeyPressed('jump')) {
+                // make sure we are not already jumping or falling
+                if (!this.body.jumping && !this.body.falling) {
+                    // set current vel to the  maximum defined value
+                    // gravity will then do the res
+                    this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
+                    // set the jumping flag
+                    this.jumping = true;
+                    
+                }
+                
+
+            }
+           
         else {
             this.body.vel.x = 0;
         }
@@ -69,4 +83,23 @@ game.LevelTrigger = me.Entity.extend({
         me.state.current().resetPlayer(this.xSpawn, this.ySpawn);
     }
     
+});
+
+game.BadGuy = me.Entity.extend({
+    init: function (x, y, settings) {
+        this._super(me.Entity, 'init', [x, y, {
+                image: "slime",
+                spritewidth: "60",
+                spriteheight: "28",
+                width: 60,
+                height: 28,
+                getShape: function () {
+                    return (new me.Rect(0, 0, 00, 28)).toPolygon();
+                }
+            }]);
+    },
+    
+    update: function(delta) {
+        
+    }
 });

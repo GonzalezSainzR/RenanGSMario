@@ -8,6 +8,8 @@ game.resources = [
     {name: "meta-tiles", type: "image", src: "data/img/meta-tiles.png"},
     {name: "mario", type:"image", src: "data/img/player1.png"},
     {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
+    {name: "slime", type:"image", src: "data/img/slime-spritesheet.png"},
+    {name: "item-spritesheet", type:"image", src: "data/img/item-spritesheet.png"},
     
 	/* Atlases 
 	 * @example
@@ -20,7 +22,8 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
     {name: "Level04", type: "tmx", src: "data/map/Level04.tmx"},
-    {name: "Level05", type: "tmx", src: "data/map/Level05.tmx"}
+    {name: "Level05", type: "tmx", src: "data/map/Level05.tmx"},
+    {name: "Level06", type: "tmx", src: "data/map/Level06.tmx"}
 	/* Background music. 
 	 * @example
 	 * {name: "example_bgm", type: "audio", src: "data/bgm/"},
